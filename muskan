@@ -1,0 +1,80 @@
+/maths_fun
+int main() {
+    float x,y,z,power,sqroot;
+    scanf("%f %f %f",&x,&y,&z);
+    power=pow(x,y);
+    sqroot=sqrt(z);
+    printf("%f\n",power);
+    printf("%f",sqroot);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+//product of 2 numbers
+int main() {
+    int x,y,p;
+    scanf("%d",&x);
+    scanf("%d",&y);
+    p=x*y;
+    printf("%d",p);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
+
+//swaping of two numbers
+int main() {
+    int x,y,t;
+    scanf("%d",&x);
+    scanf("%d",&y);
+        t=x;
+        x=y;
+        y=t;
+    printf("%d ",x);
+    printf("%d",y);
+    
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+#vowels and consonents
+n=input()
+if not n.isalpha():
+    print("Not an alphabet.")
+elif n in 'aeiouAEIOU':
+    print("Vowel.")
+else:
+    print("Consonant.")
+          
+  #divisibility check        
+ n=int(input())
+d1=int(input())
+d2=int(input())
+if n%d1==0 and n%d2==0:
+    print("Yes.")
+else:
+    print("No.")
+    
+ #feet and inches   
+ n=int(input())
+x=12*n
+print(x)
+
+#floor and ceil
+import math as m
+x=float(input())
+print('{:.6f}'.format(m.floor(x)))
+print('{:.6f}'.format(m.ceil(x)))
+
+#number system
+x=int(input())
+print(x)
+print(oct(x).lstrip('0o'))
+h=hex(x).lstrip('0x')
+print(h)
+print(h.upper())
+
+#ascii code
+x=str(input())
+print(ord(x))
